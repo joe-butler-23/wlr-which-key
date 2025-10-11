@@ -103,7 +103,7 @@ impl Menu {
                     MenuItem {
                         action: Action::Submenu(new_page),
                         key_comp: ComputedText::new(key.to_string(), context, &config.font.0),
-                        val_comp: ComputedText::new(format!("+{desc}"), context, &config.font.0),
+                        val_comp: ComputedText::new(format!("{desc}"), context, &config.font.0),
                         key: key.clone(),
                     }
                 }

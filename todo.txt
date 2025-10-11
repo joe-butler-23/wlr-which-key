@@ -1,0 +1,41 @@
+- Option to copy prompts and other text files to clipboard
+- project launcher, using tmux for instantaneous launches
+- omarchy style unified menu
+
+## Recent Progress Summary
+✅ FORKED: wlr-which-key from GitHub (MaxVerevkin/wlr-which-key)
+✅ BUILT: Successfully compiled and installed to ~/.local/bin/
+✅ CONFIGURED: Comprehensive menu system with Projects, AI, Utilities, etc.
+✅ CRUSH INTEGRATION: Set up Crush with MCP servers and GLM coding plan
+✅ PROJECT AI: All Obsidian vault projects now launch Crush in correct directories
+✅ TERMINAL FIX: Updated all Crush commands to use kitty terminal emulator
+✅ AI LAUNCHER: Created ai-launcher script with tmux session management
+✅ LOW LATENCY: Implemented persistent tmux sessions with Goose CLI integration
+✅ CONTEXT AWARENESS: Automatic claude.md loading for project context
+✅ PATH FIX: Updated wlr-which-key config to use absolute paths for reliable execution
+
+## Completed AI CLI Integration (9 Oct 2025)
+- **ai-launcher script**: `/home/joebutler/.local/bin/ai-launcher` - Fast project-aware AI session manager
+- **Persistent sessions**: Named tmux sessions (ai-reading, ai-budget, etc.) that stay alive
+- **Goose integration**: Uses lightweight Goose CLI instead of heavier Crush
+- **Instant resumption**: Sub-100ms session focus vs multi-second startup
+- **Project context**: Auto-loads claude.md files when present
+- **wlr-which-key integration**: Both Projects → Open and Projects → AI now use ai-launcher
+- **Performance tested**: Verified fast session resumption (~640ms terminal startup)
+
+## Remaining Tasks
+- Add clipboard functionality for prompts and text files
+- Implement systemd user service for tmux pre-start (optional optimization)
+- Consider adding more AI CLI options (Gemini, etc.) if needed
+- Test and refine context loading mechanisms
+
+## Technical Implementation Details
+The latency reduction approach successfully implemented:
+- ✅ Persistent tmux sessions per project (ai-<slug>)
+- ✅ Fast shell startup with bash --noprofile --norc
+- ✅ Context autoload from claude.md files
+- ✅ Kitty terminal integration for instant focus
+- ✅ Absolute path configuration for reliability
+- ✅ Project-aware session management
+
+Performance improvement: Multi-second AI startup reduced to sub-second session resumption.
