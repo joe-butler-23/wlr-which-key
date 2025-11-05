@@ -1,9 +1,0 @@
-- Option to copy prompts and other text files to clipboard
-- project launcher, using tmux for instantaneous launches
-- omarchy style unified menu
-
-## Remaining Tasks
-- Add clipboard functionality for prompts and text files
-- Implement systemd user service for tmux pre-start (optional optimization)
-- Consider adding more AI CLI options (Gemini, etc.) if needed
-- Test and refine context loading mechanisms

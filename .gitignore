@@ -1,1 +1,10 @@
 /target
+/result
+*.log
+build_output.txt
+flake_check_output.txt
+prompt_launcher_direct_output.txt
+.DS_Store
+*.swp
+*.swo
+*~
