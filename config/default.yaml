@@ -181,31 +181,37 @@ menu:
             desc: uptime
             cmd: echo "uptime placeholder"
 
-  # documents
-  - key: "p"
-    desc: documents
+  # vaults
+  - key: "v"
+    desc: vaults
     submenu:
-      - key: "w"
-        desc: workspace
-        cmd: /home/joebutler/vault/infrastructure/scripts/workspace-hypr-launch.sh vault-work resources/document-approach/document-approach.md
-      - key: "d"
-        desc: document approach
-        cmd: /home/joebutler/vault/infrastructure/scripts/workspace-hypr-launch.sh doc-approach resources/document-approach/document-approach.md
-      - key: "c"
-        desc: coffee water
-        cmd: /home/joebutler/vault/infrastructure/scripts/workspace-hypr-launch.sh doc-coffee-water resources/document-approach/topics/coffee-water.md
-      - key: "a"
-        desc: callisthenics
-        cmd: /home/joebutler/vault/infrastructure/scripts/workspace-hypr-launch.sh doc-callisthenics resources/document-approach/topics/callisthenics.md
-      - key: "k"
-        desc: cooking knowledge
-        cmd: /home/joebutler/vault/infrastructure/scripts/workspace-hypr-launch.sh doc-cooking-knowledge resources/document-approach/topics/cooking-knowledge.md
-      - key: "b"
-        desc: lower blood pressure
-        cmd: /home/joebutler/vault/infrastructure/scripts/workspace-hypr-launch.sh doc-blood-pressure resources/document-approach/topics/lower-blood-pressure.md
-      - key: "o"
-        desc: agent orchestration
-        cmd: /home/joebutler/vault/infrastructure/scripts/workspace-hypr-launch.sh doc-agent-orchestration protocols/agent-orchestration.md
+      - key: "v"
+        desc: vault
+        submenu:
+          - key: "d"
+            desc: documents
+            submenu:
+              - key: "w"
+                desc: workspace
+                cmd: /home/joebutler/vault/infrastructure/scripts/workspace-hypr-launch.sh vault-work resources/document-approach/document-approach.md
+              - key: "d"
+                desc: document approach
+                cmd: /home/joebutler/vault/infrastructure/scripts/workspace-hypr-launch.sh doc-approach resources/document-approach/document-approach.md
+              - key: "c"
+                desc: coffee water
+                cmd: /home/joebutler/vault/infrastructure/scripts/workspace-hypr-launch.sh doc-coffee-water resources/document-approach/topics/coffee-water.md
+              - key: "a"
+                desc: callisthenics
+                cmd: /home/joebutler/vault/infrastructure/scripts/workspace-hypr-launch.sh doc-callisthenics resources/document-approach/topics/callisthenics.md
+              - key: "k"
+                desc: cooking knowledge
+                cmd: /home/joebutler/vault/infrastructure/scripts/workspace-hypr-launch.sh doc-cooking-knowledge resources/document-approach/topics/cooking-knowledge.md
+              - key: "b"
+                desc: lower blood pressure
+                cmd: /home/joebutler/vault/infrastructure/scripts/workspace-hypr-launch.sh doc-blood-pressure resources/document-approach/topics/lower-blood-pressure.md
+              - key: "o"
+                desc: agent orchestration
+                cmd: /home/joebutler/vault/infrastructure/scripts/workspace-hypr-launch.sh doc-agent-orchestration protocols/agent-orchestration.md
   # quick actions
   - key: "q"
     desc: quick actions
